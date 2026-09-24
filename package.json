@@ -1,0 +1,30 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "description": "A TypeScript CLI for managing projects and tasks, with JSON persistence, filtering, sorting and stats.",
+  "main": "dist/index.js",
+  "bin": {
+    "taskflow": "dist/cli/index.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli/index.js",
+    "dev": "ts-node src/cli/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": ["typescript", "cli", "task-manager", "productivity"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
